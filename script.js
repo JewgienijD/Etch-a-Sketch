@@ -2,6 +2,12 @@
 const gridContainer = document.getElementById('grid-container');
 const cleanGridButton = document.getElementById('clean');
 const rangeGridSize = document.getElementById('grid-numbers');
+const buttons = document.querySelectorAll('button');
+const colorId = document.getElementById('input-color');
+let penColor = '';
+let x = '';
+
+
 
 function makeSquare(rows,colms){
     remoweSquare();
@@ -14,7 +20,7 @@ function makeSquare(rows,colms){
    let gridPixels = gridContainer.getElementsByClassName('griditem');
    Array.from(gridPixels).forEach((griditem)=>{
        griditem.addEventListener('mouseover', (e)=>{
-           e.target.style.backgroundColor = 'orange';
+           e.target.style.backgroundColor = penColor;
        })
    })
 };
@@ -39,7 +45,43 @@ function remoweSquare(){
     }
 }
 
+//choose colors by clicking colors buttons;
+function getPenColor(){
+    let buttonId = document.querySelectorAll('button');
+    Array.from(buttonId).forEach((button)=>{
+        button.addEventListener('click', (e)=>{
+            switch(button.id){
+                case 'random': penColor = getRandomColor();
+                break;
+                case 'own': penColor = x;
+                break;
+                case 'eraser': penColor = getEraserGrid();
+            }
+            
+        })
+    })
+}
+
+//generate random colors
+function getRandomColor(){
+   const randomColor = (Math.random()*0xFFFFFF<<0).toString(16);
+   return (`#${randomColor}`);
+}
+
+//get eraser
+function getEraserGrid(){
+    let a= '';
+    return a;
+}
+
+//choose own color
+colorId.addEventListener('change',(e)=>x=e.target.value);
+              
+   
+
+
 makeSquare(10,10);
+getPenColor();
 
 
 
