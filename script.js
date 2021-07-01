@@ -76,7 +76,8 @@ function getEraserGrid(){
 
 //choose own color
 colorId.addEventListener('change',(e)=>x=e.target.value);
-              
+           
+
    
 
 
