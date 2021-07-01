@@ -7,17 +7,23 @@
   <body>
     <div class = "pagestructure">
       <div class = "header">Etch-a-Sketch</div>
+      <button id = "random" class = "buttons">RANDOM</button>
+      <button id = "own" class = "buttons">PICK:
+        <input type="color" value="#ff0000" id="input-color">
+      </button>
+      <button class = "buttons-range">
+        <input type = "range" id="grid-numbers" value = "" min = "2" max = "100">
+      </button>
+      
       <div class="grid">
        <div class = "grid-wrapper">
         <div id = "grid-container"></div>
        </div>
       </div>
-      <button id = "clean" class = "buttons">CLEAN</button>
-      <button id = "red" class = "buttons">RED</button>
-      <button id = "new" class= "buttons">NEW</button>
       <div class ="squaresettings">
-        <input type = "range" id="grid-numbers" value = "" min = "2" max = "100">
-      </div>
+        <button id = "clean" class = "buttons">CLEAN</button>
+        <button id = "eraser" class = "buttons">ERASER</button>      
+        </div>
     </div>
   <body>
   <script src="script.js"></script>
