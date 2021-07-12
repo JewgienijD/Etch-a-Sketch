@@ -1,7 +1,14 @@
 # Etch-a-Sketch
 
-Etch A Sketch GAME
+This project is a part of training course ["The Odin Project"](https://www.theodinproject.com/paths/foundations/courses/foundations/lessons/etch-a-sketch-project)
 
-Developed by using HTML, CSS and JavaScript
+[LIVE DEMO](https://sirjohnsem.github.io/Etch-a-Sketch/)
 
-This project is part the The Odin Project's curriculum.
+# Project assignments
+- use DOM manipulation
+
+# User stories
+- user can change grid size
+- user can choose a random or particular color
+- user can clean the whole grid or particular squares  
+
