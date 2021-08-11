@@ -2,7 +2,7 @@
 
 This project is a part of training course ["The Odin Project"](https://www.theodinproject.com/paths/foundations/courses/foundations/lessons/etch-a-sketch-project)
 
-[LIVE DEMO](https://sirjohnsem.github.io/Etch-a-Sketch/)
+[LIVE DEMO](https://jewgienijd.github.io/Etch-a-Sketch/)
 
 # Project assignments
 - use DOM manipulation
